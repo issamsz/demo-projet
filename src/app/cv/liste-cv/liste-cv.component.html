@@ -1,0 +1,56 @@
+<div class="main">
+
+  <div class="table">
+    <h1>Liste des CVs</h1>
+    <mat-card class="head">
+
+      <div class="item">
+        <span>Détail</span>
+      </div>
+      <div class="item">
+        <span>lastname</span>
+      </div>
+
+      <div class="item">
+        <span>firstname</span>
+      </div>
+
+      <div class="item">
+        <span>Image</span>
+      </div>
+    </mat-card>
+
+
+
+    <mat-card *ngFor="let personn of personnes" class="line" [ngStyle]="{ backgroundColor: personn.id%2 === 0 ? 'rgb(236, 125, 125)' : 'rgb(240, 205, 205)'}">
+
+
+
+      <div class="item" >
+        <button (click)= "detail(personn)" mat-mini-fab color="warn" class="btn">
+          <mat-icon>keyboard_arrow_right</mat-icon>
+        </button>
+        </div>
+
+
+      <div class="item" >
+        <span>{{personn.name}}</span>
+      </div>
+      <div class="item">
+        <span>{{personn?.firstname}}</span>
+      </div>
+
+      <div class="item">
+        <a [routerLink]="[personn.id]"><span> <img src="../../../assets/images/{{personn.path|img}}" width="60rem" height="60rem" class="img"> </span></a>
+      </div>
+
+    </mat-card>
+
+  </div>
+</div>
+
+
+
+
+<div>23806190</div>
+<div>021205918</div>

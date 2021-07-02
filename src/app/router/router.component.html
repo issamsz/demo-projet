@@ -1,0 +1,23 @@
+
+<div class="main">
+<mat-card class="card">
+
+  <h1>
+  Router Similator (todo) (cv) (router) :
+  </h1>
+
+      <mat-form-field class="inputs" >
+        <mat-label>Entrer le nom de la route</mat-label>
+        <input matInput placeholder="name" type="text" [(ngModel)]= "tentative">
+      </mat-form-field>
+
+
+
+
+
+      <button  (click)= "aller()"
+      class="inputs" mat-raised-button color="primary" [disabled] = "! tentative.trim().length ">Naviger</button>
+
+    </mat-card>
+
+  </div>

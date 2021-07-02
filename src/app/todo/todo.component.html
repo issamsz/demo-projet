@@ -1,0 +1,90 @@
+<div class="main">
+
+
+
+
+              <div class="table">
+                <mat-card class="head">
+
+                  <div class="item">
+                    <span>ID</span>
+                  </div>
+
+                  <div class="item">
+                    <span>Name</span>
+                  </div>
+                  <div class="item">
+                    <span>content</span>
+                  </div>
+                  <div class="item">
+                    <span>phone</span>
+                  </div>
+
+                  <div class="item">
+                    <span>action</span>
+                  </div>
+
+                </mat-card>
+                <mat-card *ngFor="let todo of todos" class="line">
+
+                  <div class="item">
+                    <span>{{todo.int}}</span>
+                  </div>
+
+                  <div class="item">
+                    <span>{{todo.name}}</span>
+                  </div>
+                  <div class="item">
+                    <span>{{todo.content}}</span>
+                  </div>
+                  <div class="item">
+                    <span>{{todo.phone}}</span>
+                  </div>
+
+                  <div class="item">
+                  <button (click)= "deleteTodo(todo)" mat-mini-fab color="warn" class="btn">
+                    <mat-icon>delete</mat-icon>
+                  </button>
+                </div>
+
+                </mat-card>
+
+              </div>
+
+
+
+
+
+          <mat-card class="card">
+
+            <h1>
+            Voici un exemple model
+            </h1>
+
+                <mat-form-field class="inputs" >
+                  <mat-label>name</mat-label>
+                  <input matInput placeholder="name" type="text" [(ngModel)]= "todo.name">
+                </mat-form-field>
+
+                <mat-form-field class="inputs">
+                  <mat-label>lastname</mat-label>
+                  <input matInput type="text" placeholder="Lastname" [(ngModel)]= "todo.content">
+                </mat-form-field>
+
+                <mat-form-field class="inputs" >
+                  <mat-label>phone</mat-label>
+                  <input matInput placeholder="phone" type="text" [(ngModel)]= "todo.phone">
+                </mat-form-field>
+
+
+
+                <button  (click)= "addTodo()"
+                class="inputs" mat-raised-button color="primary" [disabled] = "! todo.name.trim().length || ! todo.content.trim().length || ! todo.phone.trim().length">Ajouter</button>
+
+              </mat-card>
+
+
+
+
+
+  </div>

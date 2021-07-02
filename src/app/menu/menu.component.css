@@ -1,0 +1,39 @@
+.menu{
+  width: 100%;
+  height: 3.5rem;
+  background-color: rgb(68, 65, 65);
+  display: flex;
+
+}
+
+.items{
+  margin-left: 3%;
+  color : rgb(190, 183, 183)
+}
+
+.items:hover {
+background-color: rgb(43, 43, 43);
+color : rgb(255, 253, 253)
+
+}
+
+.currentLink{
+  color :#d83971
+
+}
+
+.v-bar {
+  margin-left: 4%;
+  height: 80%;
+  margin-top: 0.4%;
+  border-right: 0.1px solid #979393;
+}
+
+.login{
+  color :#d83971;
+ display :flex;
+ align-items: center;
+margin-left: 40%;
+}
+
+

@@ -1,0 +1,165 @@
+.main {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  margin-top: 18%;
+}
+
+
+
+.head {
+
+  width: 100%;
+  height: 40%;
+  background-color: rgb(181, 222, 241);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+
+.item {
+margin-bottom: 2rem;
+
+}
+
+span{
+  font-size: 2rem;
+}
+
+.img{
+  border-radius: 50%;
+  box-shadow: 1px 1px 12px #555;
+}
+
+.aucun{
+  margin-left: 10rem;
+}
+
+
+
+
+.imge {
+
+  position: absolute;
+  animation: tail 0.9s;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15%;
+  margin-left: 35%;
+
+}
+
+.text{
+  color: aliceblue;
+  font-size: 400%;
+  margin-top: 6%;
+  font-weight: 700;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+@keyframes pulse {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  5% {
+    margin-top: -40%;
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.6;
+   }
+   70% {
+    margin-top: 20%;
+    opacity: 0.9;
+   }
+   100% {
+    margin-top: 15%;
+    margin-left: 25%;
+    opacity: 1;
+
+   }
+}
+
+.sld{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide{
+  width: 100%;
+  animation: sss 0.9s;
+}
+
+@keyframes sss {
+  0% {
+    width: 80%;
+    opacity: 0;
+  }
+
+   100% {
+    width: 100%;
+    opacity: 1;
+   }
+}
+
+.ticket{
+  background-color: #d83971;
+  position: absolute;
+  width: 10%;
+  height: 14%;
+  clip-path: polygon(0 68%, 0 0, 100% 0, 100% 69%, 51% 100%);
+  margin-left: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: button 3s;
+
+}
+
+
+@keyframes button {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+    margin-left: 7%;
+  }
+  5% {
+    margin-top: -40%;
+    opacity: 0;
+
+  }
+
+  10% {
+    opacity: 0.6;
+   }
+   70% {
+    margin-top: 1%;
+    opacity: 0.9;
+   }
+   100% {
+
+    opacity: 1;
+    margin-left: 7%;
+   }
+}
+
+.muscle{
+  color: white;
+  font-weight:700;
+}
+
+.tw{
+  position: absolute;
+  color: aliceblue;
+  font-size: 280%;
+  font-weight: 500;
+  margin-top: 22%;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-left: 19%;
+
+
+}
